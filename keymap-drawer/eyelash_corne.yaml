@@ -250,7 +250,7 @@ combos:
   k: '&soft_off'
 - p: [43, 46]
   k: {t: GAMING, h: toggle}
-  l: [QWERTY]
+  l: [QWERTY, GAMING]
 - p: [23, 24, 25]
   k: '&cad'
   l: [QWERTY]
