@@ -138,7 +138,8 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&kp CAPS>;
+            tapping-term-ms = <175>;
+            bindings = <&mt LEFT_SHIFT CAPS>, <&kp LCTRL>;
         };
         td_esc: td_esc {
             compatible = "zmk,behavior-tap-dance";
@@ -150,7 +151,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Encoder Mute/Pause Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
+            bindings = <&kp K_PLAY_PAUSE>, <&kp K_MUTE>;
         };
 
 
@@ -170,7 +171,7 @@
         volume_encoder: volume_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+            bindings = <&kp K_VOL_UP>, <&kp K_VOL_DN>;
         };
         brightness_encoder: brightness_encoder {
             compatible = "zmk,behavior-sensor-rotate";
@@ -197,7 +198,7 @@
         ctrl_alt_del_combo {
             bindings = <&cad>;
             key-positions = <23 24 25>; // three finger salute
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
