@@ -168,16 +168,6 @@
 
             tap-ms = <50>;
         };
-        volume_encoder: volume_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp K_VOL_UP>, <&kp K_VOL_DN>;
-        };
-        brightness_encoder: brightness_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_BRI_UP>, <&kp C_BRI_DN>;
-        };
     };
 
     combos {
@@ -280,7 +270,7 @@
                 //                                ╰──────────┴────────┴───────────╯                                                       ╰───────────┴────────┴──────────╯
             >;
 
-            sensor-bindings = <&volume_encoder>;  // 🔊 Volume control
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  // 🔊 Volume control
         };
 
         mod_layer {
@@ -301,7 +291,7 @@
                 //                                                 ╰───────────────┴───────────────┴───────────────╯                                                      ╰────────┴────────┴──────────────╯
             >;
 
-            sensor-bindings = <&brightness_encoder>;  // 🔆 Brightness control
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;  // 🔆 Brightness control
         };
 
         gaming_layer {
@@ -343,7 +333,7 @@
                 //                            ╰────────┴────────┴────────╯                                                       ╰────────┴────────┴────────╯
             >;
 
-            sensor-bindings = <&volume_encoder>;  // 📜 Scroll control
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  // 🔊 Volume control
         };
     };
 };
