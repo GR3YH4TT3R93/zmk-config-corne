@@ -14,7 +14,7 @@ layers:
   - {t: O, h: Sft+O}
   - {t: P, h: Sft+P}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-tab-reverse$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: LGUI}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
