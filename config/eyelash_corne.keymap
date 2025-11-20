@@ -138,19 +138,21 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
-            bindings = <&mt LEFT_SHIFT CAPS>, <&kp LCTRL>;
+            tapping-term-ms = <280>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
         td_esc: td_esc {
             compatible = "zmk,behavior-tap-dance";
             display-name = "ESC/Delete Tap Dance";
             #binding-cells = <0>;
+            tapping-term-ms = <280>;
             bindings = <&kp ESC>, <&kp DEL>;
         };
         td_encoder: td_encoder {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Encoder Mute/Pause Tap Dance";
             #binding-cells = <0>;
+            tapping-term-ms = <280>;
             bindings = <&kp K_PLAY_PAUSE>, <&kp K_MUTE>;
         };
 
