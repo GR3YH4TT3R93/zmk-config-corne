@@ -237,7 +237,7 @@
             display-name = "QWERTY";
             bindings = <
                 // ╭─────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮                   ╭───────────────╮                   ╭────────────┬─────────────┬───────────┬───────────┬─────────────┬───────────╮
-                     &td_esc       AS(Q)          AS(W)          AS(E)          AS(R)          AS(T)                              &kp UP                           AS(Y)          AS(U)        AS(I)      AS(O)        AS(P)       &kp ENTER
+                     &kp ESC       AS(Q)          AS(W)          AS(E)          AS(R)          AS(T)                              &kp UP                           AS(Y)          AS(U)        AS(I)      AS(O)        AS(P)       &kp ENTER
                 // │ES/DL/CAD│      Q       │      W       │      E       │      R       │      T       │                   │       ↑       │                   │    Y       │      U      │     I     │    O      │     P       │ ENTER     │
                 // ├─────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ╭─────────────────┼───────────────┼─────────────────╮ ├────────────┼─────────────┼───────────┼───────────┼─────────────┼───────────┤
                      AS(TAB)   &hml LCTRL A    &hml LGUI S    &hml LALT D   &hml LSHIFT F   AS(G)              &kp LEFT          &kp ENTER       &kp RIGHT         AS(H)      &hmr RSHIFT J &hmr LALT K &hmr RGUI L &hmr RCTRL SEMI  AS(SQT)
